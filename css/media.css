@@ -1,0 +1,94 @@
+@media (min-width: 1480px) {
+    .container{
+        max-width: 1440px;
+    }
+    .itpark_header .img_blog{
+        width: 75%;
+    }
+    .itpark_content{
+        width: 25%;
+    }
+}
+@media (max-width: 992px) {
+    .itpark_text{
+        font-size: 16px;
+    }
+    .itpark_header .img_blog{
+        width: 65%;
+    }
+    .itpark_content{
+        width: 35%;
+    }
+    .itpark_card{
+        max-width: 380px;
+    }
+    .nav_link{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 776px) {
+    .menu_btn{
+        display: block;
+    }
+    .nav_list{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transform: translateY(-110%);
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        z-index: 99;
+        transition: all .3s ease;
+    }
+    .nav_list .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_link{
+        margin: 10px 0;
+    }
+    .nav_list.active{
+        transform: translateY(0);
+    }
+    .menu_btn.active i::before{
+        content: '\f00d';
+    }
+    .menu_btn.active, .nav_link_tooltips, .language_tooltips{
+        background: #E5E5E5;
+    }
+    .itpark_header{
+        display: flex;
+        flex-direction: column;
+    }
+    .itpark_header .img_blog{
+        width: 100%;
+    }
+    .itpark_content{
+        width: 90%;
+        border-radius: 8px;
+        padding: 15px !important;
+    }
+    .itpark_cards{
+        justify-content: center;
+    }
+    .footer_content{
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .logo_text{
+        padding: 0 15px !important;
+    }
+}
+@media (max-width: 576px) {
+    .language_tooltips{
+        margin-left: -140%;
+    }
+    .logo_text{
+        padding: 0 5px !important;
+    }
+    .itpark_card{
+        max-width: 340px;
+    }
+}
